@@ -1,47 +1,73 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
+  import Jumbotron from "./components/Jumbotron.svelte";
 </script>
 
-<main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
+<div class="max-w-10xl mx-auto">
+  <Jumbotron title="Ali Irsyaad Nursyaban" subtitle="Welcome to my profile!" />
+
+<div class="bg-gray-100">
+  <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">Experience</h2>
+
+    <div class="border-t border-gray-200 py-4">
+      <h3 class="text-lg font-medium text-gray-900">Job Title</h3>
+      <p class="mt-2 text-base text-gray-500">
+        Job description or summary of responsibilities.
+      </p>
+      <p class="mt-2 text-base text-gray-500">
+        Dates of employment or duration of project.
+      </p>
+    </div>
+
+    <!-- Add additional experience sections as needed -->
+
+    <h2 class="text-2xl font-bold text-gray-900 my-4">Projects</h2>
+
+    <div class="border-t border-gray-200 py-4">
+      <h3 class="text-lg font-medium text-gray-900">Project Name</h3>
+      <p class="mt-2 text-base text-gray-500">
+        Project description or summary of features.
+      </p>
+      <p class="mt-2 text-base text-gray-500">
+        Technologies used, date completed or ongoing.
+      </p>
+    </div>
+
+    <!-- Add additional project sections as needed -->
+
+    <h2 class="text-2xl font-bold text-gray-900 my-4">Education</h2>
+
+    <div class="border-t border-gray-200 py-4">
+      <h3 class="text-lg font-medium text-gray-900">Degree or Program Name</h3>
+      <p class="mt-2 text-base text-gray-500">
+        School or institution name, date of graduation or expected completion.
+      </p>
+      <p class="mt-2 text-base text-gray-500">
+        Relevant coursework or achievements.
+      </p>
+    </div>
+
+    <!-- Add additional education sections as needed -->
+
+    <h2 class="text-2xl font-bold text-gray-900 my-4">Social Media</h2>
+
+    <div class="border-t border-gray-200 py-4">
+      <ul class="list-disc list-inside">
+        <li>
+          <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" rel="noopener"
+            class="text-blue-600 hover:text-blue-800">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener"
+            class="text-gray-600 hover:text-gray-800">
+            GitHub
+          </a>
+        </li>
+        <!-- Add additional social media links as needed -->
+      </ul>
+    </div>
   </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
-</main>
-
-<style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
-</style>
+</div>
+</div>
